@@ -6,8 +6,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 @Data
-public class PlantDataProcessingDTO implements Serializable {
-    private static final long serialVersionUID = 1L;
+public class PlantDataProcessingVO implements Serializable {
     private Integer id;
 
     private Long plantAgePlantTypeID;

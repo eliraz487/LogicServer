@@ -6,12 +6,12 @@ import lombok.Data;
 import java.io.Serializable;
 
 @Data
-public class WateringRequirementVO implements Serializable {
+public class CheckRequirementVO implements Serializable {
     private Long id;
 
     private Long agePlantTypeID;
 
-    private Long checkID;
+    private CheckTableVO checkID;
 
     private double maxRecommendValue;
 

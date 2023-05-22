@@ -1,10 +1,9 @@
-package org.example.models;
+package com.example.demo.vo;
 
 
 import lombok.Data;
 
 import java.io.Serializable;
-import java.sql.Date;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -17,9 +16,9 @@ public class SensorTypeVSCheckValueVO implements Serializable {
 
     private Long id;
 
-    private CheckTableVO check;
+    private String check;
 
-    private Float value;
+    private double value;
 
 
     private LocalDateTime valueTime;
@@ -29,7 +28,7 @@ public class SensorTypeVSCheckValueVO implements Serializable {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         return "SensorTypeVSCheckValueVO{" +
                 "id=" + id +
-                ", check=" + check.getTitle() +
+                ", check=" + check +
                 ", value=" + value +
                 ", valueTime=" + valueTime.format(formatter) +
                 '}';
